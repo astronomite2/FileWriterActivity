@@ -20,10 +20,12 @@ public class MyFileWriter {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        printFileSize("SillyClass.java");
     }
     public static void printFileSize(String fileName)
     {
         //implement my print filesize
-        
+        File file = new File(fileName);
+        System.out.println(file.length());
     }
 }

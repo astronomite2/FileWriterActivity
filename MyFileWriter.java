@@ -20,5 +20,14 @@ public class MyFileWriter {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        printFileSize("SillyClass.java");
+    }
+    //printFileSize gets the filesize of a given file
+    //@param fileName the name of the file
+    public static void printFileSize(String fileName)
+    {
+        //implement my print filesize
+        File file = new File(fileName);
+        System.out.println(file.length());
     }
 }
